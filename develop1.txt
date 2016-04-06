@@ -1,0 +1,14 @@
+git checkout master  
+\\ switches to master branch
+git branch -D develop newfeature
+\\ deletes the develop and newfeature branches
+git push origin :develop :newfeature
+\\ pushes the develop and newfeature branches to remote repo
+git tag -d V0.1
+\\ deletes tag
+git push origin :V0.1
+\\ pushes the local repo with the V0.1 tag to remote repo
+git reset --hard <last commit ID>
+\\ removes last commit
+git push --force
+\\ force deletes everything in remote repo
